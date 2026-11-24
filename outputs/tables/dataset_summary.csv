@@ -1,0 +1,7 @@
+Property,Value
+Number of samples,283726
+Number of features,30
+Classes,"0 = Legitimate, 1 = Fraud"
+Legitimate count,283253
+Fraud count,473
+Fraud percentage,0.1667%

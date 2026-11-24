@@ -1,0 +1,268 @@
+{
+  "is_synthetic": false,
+  "n_train": 198608,
+  "n_val": 28372,
+  "n_test": 56746,
+  "n_features": 30,
+  "fraud_rate_overall": 0.001667101358352777,
+  "best_model_name": "Random Forest",
+  "best_model_metrics": {
+    "Accuracy": 0.9995418179254926,
+    "Precision": 0.948051948051948,
+    "Recall": 0.7684210526315789,
+    "F1": 0.8488372093023255,
+    "FPR": 7.060775626202538e-05,
+    "ROC_AUC": 0.9761113521478229,
+    "PR_AUC": 0.8166744602570445,
+    "TP": 73.0,
+    "FP": 4.0,
+    "FN": 22.0,
+    "TN": 56647.0
+  },
+  "cost_fn": 100.0,
+  "cost_fp": 1.0,
+  "best_threshold": 0.11341708542713567,
+  "metrics_default_threshold": {
+    "Accuracy": 0.9995418179254926,
+    "Precision": 0.948051948051948,
+    "Recall": 0.7684210526315789,
+    "F1": 0.8488372093023255,
+    "FPR": 7.060775626202538e-05,
+    "TP": 73,
+    "FP": 4,
+    "FN": 22,
+    "TN": 56647,
+    "ROC_AUC": 0.9761113521478229,
+    "PR_AUC": 0.8166744602570445
+  },
+  "metrics_tuned_threshold": {
+    "Accuracy": 0.9992951045007578,
+    "Precision": 0.7722772277227723,
+    "Recall": 0.8210526315789474,
+    "F1": 0.7959183673469388,
+    "FPR": 0.00040599459850664595,
+    "TP": 78,
+    "FP": 23,
+    "FN": 17,
+    "TN": 56628,
+    "ROC_AUC": 0.9761113521478229,
+    "PR_AUC": 0.8166744602570445
+  },
+  "dataset_summary": [
+    {
+      "Property": "Number of samples",
+      "Value": 283726
+    },
+    {
+      "Property": "Number of features",
+      "Value": 30
+    },
+    {
+      "Property": "Classes",
+      "Value": "0 = Legitimate, 1 = Fraud"
+    },
+    {
+      "Property": "Legitimate count",
+      "Value": 283253
+    },
+    {
+      "Property": "Fraud count",
+      "Value": 473
+    },
+    {
+      "Property": "Fraud percentage",
+      "Value": "0.1667%"
+    }
+  ],
+  "results_table": [
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.9992,
+      "Precision": 0.8429,
+      "Recall": 0.6211,
+      "F1": 0.7152,
+      "FPR": 0.0002,
+      "ROC_AUC": 0.972,
+      "PR_AUC": 0.7396,
+      "TP": 59,
+      "FP": 11,
+      "FN": 36,
+      "TN": 56640
+    },
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.9995,
+      "Precision": 0.9481,
+      "Recall": 0.7684,
+      "F1": 0.8488,
+      "FPR": 0.0001,
+      "ROC_AUC": 0.9761,
+      "PR_AUC": 0.8167,
+      "TP": 73,
+      "FP": 4,
+      "FN": 22,
+      "TN": 56647
+    },
+    {
+      "Model": "XGBoost",
+      "Accuracy": 0.9995,
+      "Precision": 0.9467,
+      "Recall": 0.7474,
+      "F1": 0.8353,
+      "FPR": 0.0001,
+      "ROC_AUC": 0.9663,
+      "PR_AUC": 0.8366,
+      "TP": 71,
+      "FP": 4,
+      "FN": 24,
+      "TN": 56647
+    },
+    {
+      "Model": "Logistic Regression (weighted)",
+      "Accuracy": 0.9741,
+      "Precision": 0.0551,
+      "Recall": 0.8947,
+      "F1": 0.1038,
+      "FPR": 0.0257,
+      "ROC_AUC": 0.9686,
+      "PR_AUC": 0.708,
+      "TP": 85,
+      "FP": 1457,
+      "FN": 10,
+      "TN": 55194
+    },
+    {
+      "Model": "Random Forest (weighted)",
+      "Accuracy": 0.9991,
+      "Precision": 0.6937,
+      "Recall": 0.8105,
+      "F1": 0.7476,
+      "FPR": 0.0006,
+      "ROC_AUC": 0.98,
+      "PR_AUC": 0.7939,
+      "TP": 77,
+      "FP": 34,
+      "FN": 18,
+      "TN": 56617
+    },
+    {
+      "Model": "XGBoost (weighted)",
+      "Accuracy": 0.9991,
+      "Precision": 0.678,
+      "Recall": 0.8421,
+      "F1": 0.7512,
+      "FPR": 0.0007,
+      "ROC_AUC": 0.9649,
+      "PR_AUC": 0.7883,
+      "TP": 80,
+      "FP": 38,
+      "FN": 15,
+      "TN": 56613
+    },
+    {
+      "Model": "Logistic Regression (smote)",
+      "Accuracy": 0.9731,
+      "Precision": 0.0525,
+      "Recall": 0.8842,
+      "F1": 0.0991,
+      "FPR": 0.0268,
+      "ROC_AUC": 0.9672,
+      "PR_AUC": 0.7073,
+      "TP": 84,
+      "FP": 1516,
+      "FN": 11,
+      "TN": 55135
+    },
+    {
+      "Model": "Random Forest (smote)",
+      "Accuracy": 0.9976,
+      "Precision": 0.3941,
+      "Recall": 0.8421,
+      "F1": 0.5369,
+      "FPR": 0.0022,
+      "ROC_AUC": 0.9801,
+      "PR_AUC": 0.7782,
+      "TP": 80,
+      "FP": 123,
+      "FN": 15,
+      "TN": 56528
+    },
+    {
+      "Model": "Logistic Regression (undersample)",
+      "Accuracy": 0.9587,
+      "Precision": 0.0351,
+      "Recall": 0.8947,
+      "F1": 0.0676,
+      "FPR": 0.0412,
+      "ROC_AUC": 0.9571,
+      "PR_AUC": 0.5548,
+      "TP": 85,
+      "FP": 2334,
+      "FN": 10,
+      "TN": 54317
+    },
+    {
+      "Model": "Random Forest (undersample)",
+      "Accuracy": 0.9725,
+      "Precision": 0.0513,
+      "Recall": 0.8842,
+      "F1": 0.0971,
+      "FPR": 0.0274,
+      "ROC_AUC": 0.976,
+      "PR_AUC": 0.699,
+      "TP": 84,
+      "FP": 1552,
+      "FN": 11,
+      "TN": 55099
+    },
+    {
+      "Model": "Logistic Regression (smote_tomek)",
+      "Accuracy": 0.9731,
+      "Precision": 0.0525,
+      "Recall": 0.8842,
+      "F1": 0.0991,
+      "FPR": 0.0268,
+      "ROC_AUC": 0.9672,
+      "PR_AUC": 0.7073,
+      "TP": 84,
+      "FP": 1516,
+      "FN": 11,
+      "TN": 55135
+    },
+    {
+      "Model": "Random Forest (smote_tomek)",
+      "Accuracy": 0.9976,
+      "Precision": 0.3941,
+      "Recall": 0.8421,
+      "F1": 0.5369,
+      "FPR": 0.0022,
+      "ROC_AUC": 0.9801,
+      "PR_AUC": 0.7782,
+      "TP": 80,
+      "FP": 123,
+      "FN": 15,
+      "TN": 56528
+    }
+  ],
+  "leakage_table": [
+    {
+      "Pipeline": "Correct (SMOTE after split)",
+      "Accuracy": 0.9886,
+      "Precision": 0.1131,
+      "Recall": 0.8526,
+      "F1": 0.1998,
+      "ROC_AUC": 0.9525,
+      "PR_AUC": 0.7078
+    },
+    {
+      "Pipeline": "Leaky (SMOTE before split)",
+      "Accuracy": 0.9782,
+      "Precision": 0.99,
+      "Recall": 0.9662,
+      "F1": 0.9779,
+      "ROC_AUC": 0.9967,
+      "PR_AUC": 0.9971
+    }
+  ],
+  "runtime_seconds": 934.8
+}
